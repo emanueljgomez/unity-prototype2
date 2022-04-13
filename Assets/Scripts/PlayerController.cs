@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Keep the player in bounds
-        if (transform.position.x < -10)
+        if (transform.position.x < -28)
         {
-            transform.position = new Vector3(-10, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-28, transform.position.y, transform.position.z);
         }
 
-        if (transform.position.x > 10)
+        if (transform.position.x > 28)
         {
-            transform.position = new Vector3(10, transform.position.y, transform.position.z);
+            transform.position = new Vector3(28, transform.position.y, transform.position.z);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
